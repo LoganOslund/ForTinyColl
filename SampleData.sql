@@ -24,9 +24,9 @@ INSERT INTO course (course_code, title, credits, dept_id, instructor_id, term, y
   ('ENG101', 'English Composition', 3, 3, 2, 'Fall', 2025, '001', 35);
 
 -- Enrollments
-INSERT INTO enrollment (student_id, course_id, enroll_date, status) VALUES
-  (1, 1, '2025-08-20', 'enrolled'),
-  (1, 2, '2025-08-20', 'enrolled'),
-  (2, 3, '2025-08-21', 'enrolled'),
-  (3, 1, '2025-08-22', 'enrolled'),
-  (2, 4, '2025-08-22', 'enrolled');
+INSERT INTO enrollment (student_id, course_id, enroll_date, grade, status) VALUES
+  (1, 1, '2025-08-20', '87' ,'enrolled'),
+  (1, 2, '2025-08-20', '91.25' ,'enrolled'),
+  (2, 3, '2025-08-21', '75.2' ,'enrolled'),
+  (3, 1, '2025-08-22', '83' ,'enrolled'),
+  (2, 4, '2025-08-22', '100' ,'enrolled');
