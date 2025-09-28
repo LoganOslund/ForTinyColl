@@ -16,9 +16,9 @@ INSERT INTO student (first_name, last_name, email, dob, major_dept_id) VALUES
 ('Fiona', 'Garcia', 'fiona.garcia@student.tiny.edu', '2003-07-02', 2),
 ('George', 'Herris', 'george.herris@student.tiny.edu', '2001-12-21', NULL); -- no major selected
 
--- Courses
+-- Courses     All sections were set to the default 001, though you could easily change them with no issue
 INSERT INTO course (course_code, title, credits, dept_id, instructor_id, term, year, section, capacity) VALUES
-('CS101', 'Intro to Computer Science', 4, 1, 1, 'Fall', 2025, '001', 30),
+('CS101', 'Intro to Computer Science', 4, 1, 1, 'Fall', 2025, '001', 30), 
 ('CS201', 'Data Structures', 4, 1, 1, 'Fall', 2025, '001', 25),      -- technically, the instructor
 ('MATH101', 'Calculus I', 4, 2, 3, 'Fall', 2025, '001', 40),         -- does not have to be from the
 ('ENG101', 'English Composition', 3, 3, 2, 'Fall', 2025, '001', 35); -- same department as the class

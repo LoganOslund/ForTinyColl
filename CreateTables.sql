@@ -38,7 +38,7 @@ CREATE TABLE course
   instructor_id INT REFERENCES instructor(instructor_id) ON DELETE SET NULL,
   term VARCHAR(20) NOT NULL,
   year INT NOT NULL,
-  section VARCHAR(10) NOT NULL DEFAULT '001',
+  section VARCHAR(10) NOT NULL DEFAULT '001', -- 001 makes sense for default, but can be changed
   capacity INT CHECK (capacity >= 0), -- no point having a class with 0 (or negative) students
   CONSTRAINT uq_course UNIQUE (course_code, term, year, section)
 );
